@@ -1,0 +1,83 @@
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 28px clamp(24px, 7vw, 112px) 56px;
+  background: radial-gradient(circle at 80% 16%, #d7e1c4 0, transparent 27%), #f4f0e8;
+}
+
+.topbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.brand {
+  align-items: center;
+  color: #173f3b;
+  display: flex;
+  font-family: Arial, sans-serif;
+  font-size: 0.92rem;
+  font-weight: 700;
+  gap: 10px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.brand strong { font-weight: 400; }
+.brand-mark {
+  align-items: center;
+  background: #ed6a4a;
+  border-radius: 50%;
+  color: #fffaf2;
+  display: inline-flex;
+  font-family: Georgia, serif;
+  font-size: 1.15rem;
+  height: 36px;
+  justify-content: center;
+  width: 36px;
+}
+
+.status-pill {
+  border: 1px solid #adc1a5;
+  border-radius: 999px;
+  color: #52716a;
+  font: 0.7rem Arial, sans-serif;
+  letter-spacing: 0.1em;
+  padding: 9px 14px;
+  text-transform: uppercase;
+}
+
+.hero { max-width: 820px; padding: clamp(92px, 15vh, 170px) 0 110px; }
+.eyebrow, .feature-number {
+  color: #ed6a4a;
+  font: 700 0.72rem Arial, sans-serif;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.hero h1 { font-size: clamp(3.4rem, 8vw, 7.5rem); font-weight: 400; line-height: 0.94; margin: 22px 0; max-width: 820px; }
+.hero h1 em { color: #ed6a4a; font-style: italic; }
+.hero-copy { color: #52716a; font: 1.1rem/1.6 Arial, sans-serif; max-width: 500px; }
+.hero-actions { align-items: center; display: flex; flex-wrap: wrap; gap: 26px; margin-top: 34px; }
+button { border: 0; cursor: pointer; font: 700 0.78rem Arial, sans-serif; letter-spacing: 0.08em; text-transform: uppercase; }
+.primary-button { background: #173f3b; color: #fffaf2; padding: 17px 22px; }
+.primary-button span, .text-button span { font-size: 1.15rem; margin-left: 12px; }
+.text-button { background: transparent; color: #173f3b; padding: 10px 0; }
+.feature-strip { border-top: 1px solid #b8c7b2; display: grid; gap: 36px; grid-template-columns: repeat(3, 1fr); max-width: 1280px; padding-top: 28px; }
+.feature-strip article { max-width: 260px; }
+.feature-strip h2 { font-size: 1.45rem; font-weight: 400; margin: 18px 0 10px; }
+.feature-strip p { color: #52716a; font: 0.88rem/1.5 Arial, sans-serif; margin: 0; }
+
+@media (max-width: 650px) {
+  .app-shell { padding-inline: 22px; }
+  .status-pill { display: none; }
+  .hero { padding-bottom: 80px; }
+  .hero h1 { font-size: clamp(3.2rem, 16vw, 5rem); }
+  .feature-strip { grid-template-columns: 1fr; }
+}
