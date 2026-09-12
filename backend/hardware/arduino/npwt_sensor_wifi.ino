@@ -48,13 +48,12 @@
 
 // ===================== CONFIGURATION ========================
 // WiFi Credentials
-const char* ssid     = "Pancholia";
-const char* password = "Pancholia@1989";
+// WiFi Credentials
+const char* ssid = "";
+const char* password = "";
 
-// *** UPDATE THIS IP to your PC's current IP on the same WiFi ***
-// Run `ipconfig` (Windows) or `ip a` (Linux/Mac) to find it.
-// Example: if your PC shows 192.168.1.45, set it below.
-const char* backendHost = "192.168.0.108";   // <-- UPDATE IF IP CHANGES AGAIN
+// Backend API Endpoint
+const char* serverUrl = "http://172.17.191.229:8000/api/hardware/fire-gas"; // <-- UPDATE IF IP CHANGES AGAIN
 const int   backendPort = 8000;
 
 // Full URL built from host + port (easier to update)

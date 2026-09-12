@@ -1,9 +1,9 @@
 #include <WiFi.h>
 #include <HTTPClient.h>
 
-const char* ssid        = "One Plus +";
-const char* password    = "Megh152006";
-const char* backendHost = "172.17.191.229";  // <-- run ipconfig to confirm
+const char* ssid        = "";
+const char* password    = "";
+const char* backendHost = "";  // <-- run ipconfig to confirm
 const int   backendPort = 8000;
 
 #define MQ2_A0_PIN    35
