@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌾 Annadata Saathi (Let Go 3.0) 🚜
+# 🌾 Annadata Saathi (MUJX 4.0) 🚜
 
 **An Advanced Multi-Agent Precision Agriculture & Farm Intelligence System**
 
